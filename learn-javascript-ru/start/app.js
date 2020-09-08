@@ -1,4 +1,8 @@
+const log = require('./logger')(module);
+
 const { greeting, days } = require('./server');
-console.log('---------------------------')
+
+log('---------------------------')
 greeting();
-console.log(`Дней в году ${days}`)
+log(`Дней в году ${days}`);
+log('---------------------------------');
